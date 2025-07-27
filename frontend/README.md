@@ -2,6 +2,9 @@
 
 ```bash
 $ pnpm install
+
+# Generate secret for JWT authentication
+$ pnpm dlx auth secret
 ```
 
 ## Compile and run the project
