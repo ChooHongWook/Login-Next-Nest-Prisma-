@@ -1,7 +1,12 @@
 ## Project setup
 
+- Copy .env.local.template to .env.local before starting the project.
+
 ```bash
 $ pnpm install
+
+# Generate Prisma client based on the schema
+$ pnpm prisma generate
 
 # Generate secret for JWT authentication
 $ pnpm dlx auth secret
