@@ -3,6 +3,10 @@
 - Copy .env.template to .env before starting the project.
 
 ```bash
+# Copy env
+$ cp ./.env.template ./.env
+
+# Install
 $ pnpm install
 
 # start DB Container

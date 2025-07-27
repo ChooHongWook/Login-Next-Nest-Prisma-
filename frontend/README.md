@@ -1,8 +1,10 @@
 ## Project setup
 
-- Copy .env.local.template to .env.local before starting the project.
-
 ```bash
+# Copy env
+$ cp ./.env.local.template ./.env.local
+
+# Install
 $ pnpm install
 
 # Generate Prisma client based on the schema
