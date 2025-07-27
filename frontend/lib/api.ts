@@ -46,3 +46,12 @@ async function fetchApi<T>(
     return response.text() as Promise<T>;
   }
 }
+
+export async function getUserTest(token?: string) {
+  // 서버 컴포넌트에서 호출된 경우
+  if (!token && typeof window === "undefined") {
+    token = await getCookie(AUTH_COOKIE_NAME, { cookies });
+  }
+
+  return fetchApi<string>("/user-test", {}, token);
+}
